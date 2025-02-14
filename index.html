@@ -17,7 +17,7 @@
                         <p> Happy hearts day!
                             You mean the world to me. Every day with you is special, and I'm so grateful to have you in my life.  I hope your day is filled with love and joy.  You're always in my thoughts and heart.
 
-                            <a href="https://flower-link.vercel.app/">Here's my little gift for you</a>
+                            <a href="https://flower-link.vercel.app/" target="_blank">Here's my little gift for you</a>
                         </p>
                     </div>
                 </div>
@@ -30,6 +30,13 @@
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
         });
+
+        // Prevent envelope click when clicking the link
+        const link = document.querySelector('.letter a');
+        link.addEventListener('click', (event) => {
+            event.stopPropagation(); // Stops the click from affecting the envelope
+        });
+
     </script>
 </body>
 </html>
