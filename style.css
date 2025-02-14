@@ -113,3 +113,12 @@ body{
   transform: rotate(90deg);
   transition-delay: 0.4s;
 }
+
+.letter a {
+  display: inline-block; /* Makes the link behave like a block */
+  font-size: 10px; /* Ensure it's readable */
+  padding: 5px 10px; /* Adds space around the text */
+  text-decoration: none; /* Optional: remove underline */
+  background: rgba(0, 0, 0, 0.1); /* Optional: add a subtle background */
+  border-radius: 5px; /* Optional: make it look like a button */
+}
