@@ -55,21 +55,24 @@ body{
 }
 .envelope > .letter {
   position: absolute;
-  right: 10%;
+  right: 20%;
   bottom: 0;
-  width: 80%; /* Increase width */
-  height: 100%; /* Increase height */
+  width: 54%; /* Keep width the same */
+  height: 120%; /* Increase height to make it longer */
   background: var(--primary);
   text-align: center;
   transition: all 1s ease-in-out;
   box-shadow: 0 0 5px var(--shadow-color);
-  padding: 30px 15px; /* Add more padding */
+  padding: 20px 10px;
   overflow: auto; /* Allow scrolling if needed */
 }
 
-.envelope > .letter > .text {
-  font-size: 12px; /* Adjust text size for readability */
+.flap > .envelope > .letter {
+  bottom: 140px; /* Adjust to match new height */
+  transform: scale(1.5);
+  transition-delay: 1s;
 }
+
 .heart {
   position: absolute;
   top: 50%;
